@@ -1,0 +1,42 @@
+@use '../../styles/partials/fonts.scss' as *;
+@use '../../styles/partials/colors.scss' as *;
+@use '../../styles/partials/breakpoints.scss' as *;
+
+
+.overview{
+    &__header{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--right{
+            display: flex;
+            gap: 0.5rem
+        }
+
+        &--text{
+            @include bodyTextSmall;
+            color: $white;
+            margin: 0;
+        }
+    }
+
+    &__top{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body{
+        background-color: $white;
+        border-radius: 1rem;
+    }
+
+    &__title{
+        @include pageHeader;
+        font-weight: 700;
+        color: $graphite;
+    }
+}

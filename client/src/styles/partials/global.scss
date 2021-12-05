@@ -1,0 +1,18 @@
+@use './breakpoints.scss' as *;
+@use "./colors.scss" as *;
+@use "./fonts.scss" as *;
+@use "./breakpoints.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Titillium";
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

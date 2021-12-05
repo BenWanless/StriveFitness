@@ -1,0 +1,24 @@
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url('../../assets/fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('../../assets/fonts/RobotoMono-Bold.ttf');
+}
+
+$roboto-regular: "Roboto-Regular";
+$roboto-bold: "Roboto-Bold";
+
+@mixin pageHeader {
+    font-size: 1.3125rem;
+}
+
+@mixin bodyText {
+    font-size: 1rem;
+}
+
+@mixin bodyTextSmall {
+    font-size: 0.75rem;
+}

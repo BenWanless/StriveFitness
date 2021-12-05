@@ -1,0 +1,38 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/breakpoints.scss" as *;
+
+.overview {
+  &__container {
+    padding: 0 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &--left {
+      justify-self: flex-end;
+    }
+  }
+}
+
+.workout {
+  padding: 1rem 0.5rem;
+  &__wrapper {
+    background-color: $white;
+    border-radius: 1rem;
+  }
+
+  &__title {
+    @include pageHeader;
+    font-weight: 700;
+    color: $graphite;
+    padding: 1rem;
+  }
+}

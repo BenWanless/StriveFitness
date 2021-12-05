@@ -1,0 +1,62 @@
+@use '../../styles/partials/fonts.scss' as *;
+@use '../../styles/partials/colors.scss' as *;
+@use '../../styles/partials/breakpoints.scss' as *;
+
+*{
+    margin: 0;
+}
+
+.login__container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+
+    &__wrapper{
+        
+    }
+
+    &__input{
+        background-color: $white;
+        border: 2px solid $cloud;
+        box-shadow:  0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        padding: none;
+
+        &:active{
+            border: 2px solid $lime;
+            box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__text{
+        @include bodyText;
+        color: $white;
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    &__button{
+        padding-top: 2rem;
+    }
+
+    &__link{
+        color: $white;
+        padding-top: 0.5rem;
+        @include bodyTextSmall;
+        padding-bottom: 8rem;
+        text-decoration: underline;
+    }
+}
+
+.logo{
+    height: 95px;
+    width: 160px;
+    margin: 0 auto;
+}

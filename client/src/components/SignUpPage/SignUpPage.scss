@@ -1,0 +1,103 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/breakpoints.scss" as *;
+
+* {
+  margin: 0;
+}
+
+.signup {
+  &__header {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+
+    &--left,&--right{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &--left{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &--right{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include pageHeader;
+    padding-top: 2rem;
+    margin: 0;
+    color: white;
+    font-family: "Roboto-Bold";
+    text-align: center;
+  }
+
+  &__text {
+    @include bodyTextSmall;
+    color: $white;
+    margin: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 4.375rem;
+
+  &__wrapper {
+    margin: 0;
+    padding-top: 1rem;
+  }
+
+  &__input {
+    background-color: $white;
+    border: 2px solid $cloud;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: none;
+
+    &:active {
+      border: 2px solid $lime;
+      box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__text {
+    @include bodyText;
+    color: $white;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  &__button {
+    padding-top: 2rem;
+  }
+
+  &__link {
+    color: $white;
+    padding-top: 0.5rem;
+    @include bodyTextSmall;
+    padding-bottom: 8rem;
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  height: 95px;
+  width: 160px;
+  margin: 0 auto;
+}

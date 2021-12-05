@@ -1,0 +1,64 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/breakpoints.scss" as *;
+
+.training-maxes {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  &__title {
+    @include pageHeader;
+    font-weight: 700;
+    color: $graphite;
+    margin: 0;
+  }
+  &__info {
+    margin: 0;
+
+    &--underline{
+      text-decoration: underline;
+    }
+  }
+}
+
+.exercise {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__container {
+    border: 1px solid $cloud;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  &__title{
+      @include bodyTextSmall;
+      color: $graphite;
+      margin: 0 auto;
+  }
+
+  &__weight{
+      font-family: "Roboto-Regular";
+      font-size: 2rem;
+      margin: 0;
+  }
+
+  &__units{
+    @include bodyTextSmall;
+    color: $cloud;
+    margin: 0;
+  }
+}
+
+.wenis{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}

@@ -1,0 +1,9 @@
+@use './styles/partials/colors.scss' as *;
+@use './styles/partials/fonts.scss' as *;
+@use './styles/partials/breakpoints.scss' as *;
+
+.page{
+    &__wrapper{
+        background-color: $graphite;
+    }
+}
