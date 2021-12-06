@@ -2,7 +2,59 @@
     {
         "id": "1af0jruup5gu",
         "title": "Full Body: Day 1",
-        "description": "Back and posterior chain"
+        "description": "Back and posterior chain",
+        "exercises": [
+            {
+                "name":"Back Squat",
+                "sets": "1 set",
+                "reps": "2 Reps",
+                "itensity": "82.5-87.5%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Front Squat",
+                "sets": "3 sets",
+                "reps": "8 Reps",
+                "itensity": "RPE 7",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Barbell Bench Press",
+                "sets": "1 set",
+                "reps": "4 Reps",
+                "itensity": "80-85%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Barbell Bench Press",
+                "sets": "2 sets",
+                "reps": "6 reps",
+                "itensity": "75-80%",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Weighted pull-up",
+                "sets": "3 sets",
+                "reps": "4-6 reps",
+                "itensity": "8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Glute Ham Raise",
+                "sets": "3 sets",
+                "reps": "6-8 reps",
+                "itensity": "7",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Seated Face Pull",
+                "sets": "4 sets",
+                "reps": "15-20 reps",
+                "itensity": "9",
+                "rest":"1-2 min"
+            }
+        ]
+
     },
     {
         "id": "1ainjruutd1j",
@@ -10,7 +62,7 @@
         "description": "Chest, quads and abs"
     },
     {
-        "id": "1ainjruutd1j",
+        "id": "1ainjruutd1a",
         "title": "Optional: Pump Day",
         "description": "Arms"
     },

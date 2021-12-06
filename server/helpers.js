@@ -12,3 +12,9 @@ function handleResponse(res, req, found, handlerCallback = function () {}) {
       res.status(404).send(`item with ID ${req.params.id} not found`);
     }
   }
+
+
+  module.exports = {
+    getObjectByKey,
+    handleResponse,
+  };

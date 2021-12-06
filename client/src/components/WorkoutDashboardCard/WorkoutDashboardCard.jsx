@@ -6,7 +6,6 @@ import "./WorkoutDashboardCard.scss";
 class WorkoutDashboardCard extends Component {
   
   render() {
-    console.log(this.props);
       return(
       <div className="workout__card">
       <div className="workout__card--content">

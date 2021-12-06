@@ -1,28 +1,27 @@
+const { response } = require("express");
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-const helpers = require("../helpers.js");
 const constants = require("../constants.js");
 
-const workouts = JSON.parse(
-    fs.readFileSync(constants.workoutsJsonPath, "utf-8")
-);
+// const workouts = JSON.parse(
+//   fs.readFileSync(constants.workoutsJsonPath, "utf-8")
+// );
 
-router
-.route("/")
-.get((req,res)=>{
-    res.json(workouts);
-})
+const workouts = require('../data/workouts.json');
 
-router
-.route("/:id")
-.get((req,res) =>{
-    const foundWorkout = helpers.getObjectByKey(
-        workouts,
-        req.params.id,
-        "id"
-    );
-    helpers.handleResponse(res,req, foundWorkout)
-})
+router.get('/',(req, res) => {
+  res.json(workouts);
+});
+
+router.get('/:id', (req, res) => {
+  const workoutId = req.params.id;
+const foundWorkout = workouts.find(workout => workout.id === workoutId )
+if (foundWorkout){
+  res.json(foundWorkout)
+}else{
+  res.status(404).json({message: "workout not found"})
+}
+});
 
 module.exports = router;

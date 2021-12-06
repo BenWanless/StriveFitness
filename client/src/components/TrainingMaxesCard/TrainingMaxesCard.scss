@@ -1,0 +1,44 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/breakpoints.scss" as *;
+
+
+.exercise {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      padding-bottom: 2rem;
+    }
+  
+    &__container {
+      border: 1px solid $cloud;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+  
+    &__title{
+        @include bodyTextSmall;
+        text-transform: capitalize;
+        color: $graphite;
+        margin: 0 auto;
+    }
+  
+    &__weight{
+        font-family: "Roboto-Regular";
+        font-size: 2rem;
+        margin: 0;
+    }
+  
+    &__units{
+      @include bodyTextSmall;
+      color: $cloud;
+      margin: 0;
+    }
+  }
+
+  .wenis{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}

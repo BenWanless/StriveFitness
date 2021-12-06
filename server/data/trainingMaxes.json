@@ -1,17 +1,17 @@
 [
     {
-        "id": "1",
-        "exercise": "squat",
+        "id": "11231",
+        "exercise": "Squat",
         "weight": "365"
     },
     {
-        "id": "2",
-        "exercise": "bench",
+        "id": "2342342",
+        "exercise": "Bench",
         "weight": "275"
     },
     {
-        "id": "3",
-        "exercise": "deadlift",
+        "id": "3123123",
+        "exercise": "Deadlift",
         "weight": "405"
     }
 ]
