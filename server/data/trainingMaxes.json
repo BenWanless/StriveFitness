@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "exercise": "squat",
+        "weight": "365"
+    },
+    {
+        "id": "2",
+        "exercise": "bench",
+        "weight": "275"
+    },
+    {
+        "id": "3",
+        "exercise": "deadlift",
+        "weight": "405"
+    }
+]

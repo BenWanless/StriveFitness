@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    margin-bottom: 0.5rem;
 
     &--content{
         display: flex;
@@ -24,10 +25,11 @@
     &--info{
         @include bodyTextSmall;
         color: $white;
+        text-decoration: none;
         margin: 0;
     }
 
     &--wrapper{
-        padding: 0.5rem 1rem;
+        padding: 0 1rem;
     }
   }

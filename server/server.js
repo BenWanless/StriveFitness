@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const workoutRoutes = require("./routes/workouts.js");
+const trainingMaxesRoutes = require("./routes/trainingMaxes.js");
 
 const {PORT} = process.env || 8080;
 
@@ -17,12 +18,17 @@ app.get("/", (req, res) =>{
       {
         method: "get",
         endpoint: "/workouts"
+      },
+      {
+        method: "get",
+        endpoint: "/trainingmaxes"
       }
     ]
   })
 })
 
 app.use("/workouts", workoutRoutes);
+app.use("/trainingmaxes", trainingMaxesRoutes);
 
 app.listen(PORT, function () {
   console.log(`my server is running on ${PORT}`);
