@@ -1,78 +1,86 @@
-@use '../../styles/partials/fonts.scss' as *;
-@use '../../styles/partials/colors.scss' as *;
-@use '../../styles/partials/breakpoints.scss' as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/breakpoints.scss" as *;
 
-.exercise{
-    padding: 0 1rem;
-    padding-bottom: 1rem;
-    &__header{
-        background-color: $graphite;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-        border-radius: 8px 8px 0px 0px;
-
-        &--left{
-            display: flex;
-            gap: 1rem;
-        }
-    }
-
-    &__content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem 1rem;
-        border: 1px solid $cloud;
-        border-radius: 0px 0px 8px 8px;
-    }
-
-    &__name{
-        @include bodyText;
-        color: $white;
-        margin: 0;
-
-        &--blue{
-            color: $graphite;
-        }
-    }
-
-    &__text{
-        @include bodyText;
-        color: $cloud;
-        margin: 0;
-
-        &--blue{
-            color: $graphite;
-        }
-    }
-}
-
-.sub-card{
+.exercise {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  &__header {
+    background-color: $graphite;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 8px 0px 0px;
+
+    &--left {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     border: 1px solid $cloud;
-    border-radius: 0.5rem;
-    padding:1rem;
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  &__name {
+    @include bodyText;
+    color: $white;
     margin: 0;
 
-    &__title{
-        @include bodyText;
-        color: $graphite;
-        margin: 0;
+    &--blue {
+      color: $graphite;
     }
+  }
 
-    &__text{
-        @include bodyText;
-        color: $cloud;
-        margin: 0;
-    }
+  &__text {
+    @include bodyText;
+    color: $cloud;
+    margin: 0;
 
-    &__rest{
-        padding: 0.5rem;
-        width: 100%;
-        text-align: center;
+    &--blue {
+      color: $graphite;
     }
+  }
+}
+
+.sub-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $cloud;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0;
+
+  &__title {
+    @include bodyText;
+    color: $graphite;
+    margin: 0;
+  }
+
+  &__text {
+    @include bodyText;
+    color: $cloud;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $cloud;
+    line-height: 0.1em;
+    margin: 0.5rem 0 0.5rem;
+    & span {
+      background: #fff;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__rest {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
 }

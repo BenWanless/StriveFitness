@@ -11,7 +11,7 @@ class WorkoutOverviewCard extends Component {
         list.push(
           <div>
             <div className="sub-card__rest">
-              <p className="sub-card__text">{this.props.rest} rest</p>
+              <p className="sub-card__text"><span>{this.props.rest} rest</span></p>
             </div>
             <div className="sub-card">
               <h2 className="sub-card__title">{this.props.name}</h2>
