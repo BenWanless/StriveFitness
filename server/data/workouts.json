@@ -6,51 +6,51 @@
         "exercises": [
             {
                 "name":"Back Squat",
-                "sets": "1 set",
+                "sets": 1,
                 "reps": "2 Reps",
-                "itensity": "82.5-87.5%",
+                "intensity": "82.5-87.5%",
                 "rest":"3-4 min"
             },
             {
                 "name":"Front Squat",
-                "sets": "3 sets",
+                "sets": 3,
                 "reps": "8 Reps",
-                "itensity": "RPE 7",
+                "intensity": "RPE 7",
                 "rest":"3-4 min"
             },
             {
                 "name":"Barbell Bench Press",
-                "sets": "1 set",
+                "sets": 1,
                 "reps": "4 Reps",
-                "itensity": "80-85%",
+                "intensity": "80-85%",
                 "rest":"3-4 min"
             },
             {
                 "name":"Barbell Bench Press",
-                "sets": "2 sets",
+                "sets": 2,
                 "reps": "6 reps",
-                "itensity": "75-80%",
+                "intensity": "75-80%",
                 "rest":"1-2 min"
             },
             {
                 "name":"Weighted pull-up",
-                "sets": "3 sets",
+                "sets": 3,
                 "reps": "4-6 reps",
-                "itensity": "8",
+                "intensity": "RPE 8",
                 "rest":"1-2 min"
             },
             {
                 "name":"Glute Ham Raise",
-                "sets": "3 sets",
+                "sets": 3,
                 "reps": "6-8 reps",
-                "itensity": "7",
+                "intensity": "RPE 7",
                 "rest":"1-2 min"
             },
             {
                 "name":"Seated Face Pull",
-                "sets": "4 sets",
+                "sets": 4,
                 "reps": "15-20 reps",
-                "itensity": "9",
+                "intensity": "RPE 9",
                 "rest":"1-2 min"
             }
         ]
@@ -59,21 +59,232 @@
     {
         "id": "1ainjruutd1j",
         "title": "Full Body: Day 2",
-        "description": "Chest, quads and abs"
+        "description": "Chest, quads and abs",
+        "exercises": [
+            {
+                "name":"Deadlift",
+                "sets": 3,
+                "reps": "4 Reps",
+                "intensity": "80%",
+                "rest":"3-5 min"
+            },
+            {
+                "name":"Barbell overhead press",
+                "sets": 4,
+                "reps": "5 Reps",
+                "intensity": "75%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Bulgarian split squat",
+                "sets": 2,
+                "reps": "8-10",
+                "intensity": "RPE 9",
+                "rest":"2-3 min"
+            },
+            {
+                "name":"Meadows row",
+                "sets": 4,
+                "reps": "12-15 reps",
+                "intensity": "RPE 8",
+                "rest":"2-3 min"
+            },
+            {
+                "name":"Barbell or EZ bar curl",
+                "sets": 3,
+                "reps": "8-10 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Pec flye",
+                "sets": 2,
+                "reps": "12-15 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            }
+        ]
     },
     {
         "id": "1ainjruutd1a",
         "title": "Optional: Pump Day",
-        "description": "Arms"
+        "description": "Arms",
+        "exercises": [
+            {
+                "name":"A1: Hammer curl",
+                "sets": 4,
+                "reps": "8-10 Reps",
+                "intensity": "RPE 9",
+                "rest":"0 min"
+            },
+            {
+                "name":"A2: Single-arm overhead triceps extension",
+                "sets": 4,
+                "reps": "10-12 Reps",
+                "intensity": "RPE 9",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"B1: Cable curl",
+                "sets": 3,
+                "reps": "20 reps",
+                "intensity": "RPE 8",
+                "rest":"0 min"
+            },
+            {
+                "name":"B2: Cable triceps kickback",
+                "sets": 3,
+                "reps": "20 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Enhanced-eccentric calf raise",
+                "sets": 3,
+                "reps": "8 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"C1: Plate shrug",
+                "sets": 3,
+                "reps": "15-20 reps",
+                "intensity": "RPE 8",
+                "rest":"0 min"
+            },
+            {
+                "name":"C2: Neck flexion/extension (optional)",
+                "sets": 3,
+                "reps": "15/15 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            }
+        ]
     },
     {
         "id": "1aivjruutn6a",
         "title": "Full Body: Day 3",
-        "description": "Shoulers and glutes"
+        "description": "Shoulers and glutes",
+        "exercises": [
+            {
+                "name":"Back squat",
+                "sets": 1,
+                "reps": "6 Reps",
+                "intensity": "75-80%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Pin squat",
+                "sets": 2,
+                "reps": "4 Reps",
+                "intensity": "70%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Barbell bench press",
+                "sets": 1,
+                "reps": "1 rep",
+                "intensity": "87.5-92.5%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Barbell bench press",
+                "sets": 1,
+                "reps": "5 reps",
+                "intensity": "80%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Barbell bench press",
+                "sets": 1,
+                "reps": "10 reps",
+                "intensity": "65%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Chin-up",
+                "sets": 3,
+                "reps": "AMRAP",
+                "intensity": "RPE 8",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Single-leg hip thrust",
+                "sets": 2,
+                "reps": "10-12 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Cable reverse flye",
+                "sets": 4,
+                "reps": "12-15 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Standing calf raise",
+                "sets": 3,
+                "reps": "8-10 reps",
+                "intensity": "RPE 9",
+                "rest":"1-2 min"
+            }
+        ]
     },
     {
         "id": "1a3cjruucpf7",
         "title": "Full Body: Day 4",
-        "description": "Conditioning"
+        "description": "Conditioning",
+        "exercises": [
+            {
+                "name":"6in Block pull",
+                "sets": 2,
+                "reps": "6 Reps",
+                "intensity": "90%",
+                "rest":"4-6 min"
+            },
+            {
+                "name":"Pause db incline press",
+                "sets": 4,
+                "reps": "6-8 Reps",
+                "intensity": "RPE 8",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Leg curl (choice)",
+                "sets": 3,
+                "reps": "12-15 reps",
+                "intensity": "RPE 8",
+                "rest":"2-3 min"
+            },
+            {
+                "name":"Chest-supported row",
+                "sets": 4,
+                "reps": "10-12 reps",
+                "intensity": "RPE 8",
+                "rest":"2-3 min"
+            },
+            {
+                "name":"Barbell bench press",
+                "sets": 1,
+                "reps": "10 reps",
+                "intensity": "65%",
+                "rest":"3-4 min"
+            },
+            {
+                "name":"Rope overhead triceps extension",
+                "sets": 4,
+                "reps": "12-15 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            },
+            {
+                "name":"Egyptian lateral raise",
+                "sets": 4,
+                "reps": "8-10 reps",
+                "intensity": "RPE 8",
+                "rest":"1-2 min"
+            }
+        ]
     }
 ]

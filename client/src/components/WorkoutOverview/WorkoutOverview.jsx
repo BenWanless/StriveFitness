@@ -27,7 +27,16 @@ class WorkoutOverview extends Component {
 
     if (exerciseList != null) {
       exercises = exerciseList.map((exercise) => {
-        return <WorkoutOverviewCard nob={exercise.name} />;
+        // console.log(exercise)
+        return (
+          <WorkoutOverviewCard
+            name={exercise.name}
+            sets={exercise.sets}
+            reps={exercise.reps}
+            intensity={exercise.intensity}
+            rest={exercise.rest}
+          />
+        );
       });
     }
     return (
@@ -50,13 +59,18 @@ class WorkoutOverview extends Component {
         </header>
         <div className="overview__body">
           <div className="overview__top">
-            <h1 className="overview__title">
-              {this.state.workoutDetails.title}
-            </h1>
-            <button>Start</button>
-            <p>Description</p>
-            <p>{this.state.workoutDetails.description}</p>
+            <div className="overview__top--head">
+              <h1 className="overview__title">
+                {this.state.workoutDetails.title}
+              </h1>
+              <button>Start</button>
+            </div>
+            <div className="overview__top--foot">
+              <p className="overview__top--text overview__top--text--small">Description</p>
+              <p className="overview__top--text">{this.state.workoutDetails.description}</p>
+            </div>
           </div>
+          {exercises}
         </div>
       </div>
     );
