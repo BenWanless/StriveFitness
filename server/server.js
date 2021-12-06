@@ -2,11 +2,11 @@ require('dotenv').config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const jwt = require('jsonwebtoken');
 const {PORT} = process.env || 8080;
 
 const workoutRoutes = require("./routes/workouts.js");
 const trainingMaxesRoutes = require("./routes/trainingMaxes.js");
-
 
 app.use(cors());
 app.use(express.json());

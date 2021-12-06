@@ -63,7 +63,7 @@ class WorkoutOverview extends Component {
               <h1 className="overview__title">
                 {this.state.workoutDetails.title}
               </h1>
-              <Link to={`/workouts/${this.state.workoutDetails.id}`} className="start-button"><p className="start-button__text">Start</p></Link>
+              <Link to={`/workout/${this.state.workoutDetails.id}`} className="start-button"><p className="start-button__text">Start</p></Link>
             </div>
             <div className="overview__top--foot">
               <p className="overview__top--text overview__top--text--small">
