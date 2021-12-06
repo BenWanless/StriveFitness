@@ -11,7 +11,7 @@ class SignUp extends Component {
       <div>
         <header className="signup__header">
           <div className="signup__header--left">
-            <Link to="/login">
+            <Link to="/">
               <img src={BackArrow} alt="back arrow" />
             </Link>
             <p className="signup__text">Sign In</p>

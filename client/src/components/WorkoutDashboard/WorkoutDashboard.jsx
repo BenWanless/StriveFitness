@@ -8,16 +8,14 @@ import "./WorkoutDashboard.scss";
 class WorkoutDashboard extends Component {
   render() {
     return (
-      <div className="overview__container">
-        <header className="overview__header">
-          <div className="overview__header--right">
-            <img src={Logo} alt="logo" />
+      <div className="dashboard__container">
+        <header className="dashboard__header">
+          <div>
           </div>
-          <div className="overview__header--left">
-            <Link classname="overview__link" to="/login">
+            <img src={Logo} alt="logo" />
+            <Link classname="dashboard__link" to="/">
               Logout
             </Link>
-          </div>
         </header>
         <div className="workout__wrapper">
           <h1 className="workout__title">Ben's workouts</h1>

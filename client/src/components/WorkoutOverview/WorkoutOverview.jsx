@@ -10,14 +10,18 @@ class WorkoutOverview extends Component {
       <div className="overview__container">
         <header className="overview__header">
           <div className="overview__header--right">
+            <Link to="/dashboard">
             <img src={BackArrow} alt="back arrow" />
+            </Link>
             <p className="overview__header--text">Dashboard</p>
           </div>
           <div>
             <img src={Logo} alt="logo" />
           </div>
           <div>
-            <p className="overview__header--text">Logout</p>
+            <Link className="overview__header--text" to="/">
+              Logout
+            </Link>
           </div>
         </header>
         <div className="overview__body">

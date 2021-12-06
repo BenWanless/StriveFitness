@@ -28,12 +28,12 @@ const Modal = ({ handleClose, show, children }) => {
             <span className="edit-modal__form--inputSpan">lbs</span>
           </label>
         </form>
-        <div className="button__container">
-          <button className="button" type="button" onClick={handleClose}>
+        <div className="edit-button__container">
+          <button className="edit-button" type="button" onClick={handleClose}>
             Cancel
           </button>
           <button
-            className="button button--green"
+            className="edit-button edit-button--green"
             type="button"
             onClick={handleClose}
           >
