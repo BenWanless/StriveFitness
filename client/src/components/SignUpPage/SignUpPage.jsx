@@ -44,7 +44,10 @@ class SignUp extends Component {
               <input className="form__input" type="text" />
             </label>
             <div className="form__button">
-              <Button />
+              {/* <Button /> */}
+              <Link to="/dashboard" className="signup-button">
+                <p className="signup-button__text">Sign up</p>
+              </Link>
             </div>
           </form>
         </div>
