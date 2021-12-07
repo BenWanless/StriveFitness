@@ -38,7 +38,7 @@ a, a:visited, a:hover, a:active {
     border-radius: 1rem;
   }
 
-  &__title {
+  &__name{
     @include pageHeader;
     font-weight: 700;
     color: $graphite;
@@ -47,3 +47,6 @@ a, a:visited, a:hover, a:active {
   }
 }
 
+.workout-dashboard__link{
+  text-decoration: none;
+}

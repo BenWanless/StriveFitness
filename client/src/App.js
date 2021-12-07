@@ -5,6 +5,7 @@ import Login from "./components/LoginPage";
 import SignUp from "./components/SignUpPage";
 import WorkoutDashboard from "./components/WorkoutDashboard";
 import WorkoutOverview from "./components/WorkoutOverview";
+import Workout from "./components/Workout/Workout";
 import "./App.scss";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/signup" component={SignUp} />
           <Route path="/dashboard" component={WorkoutDashboard}/>
           <Route path="/overview/:workoutId" exact component={WorkoutOverview}/>
+          <Route path="/workout/:workoutId" exact component={Workout}/>
         </div>
       </Router>
     );

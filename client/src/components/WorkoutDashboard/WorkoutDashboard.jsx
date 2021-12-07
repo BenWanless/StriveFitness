@@ -25,7 +25,7 @@ class WorkoutDashboard extends Component {
     if (workoutList != null) {
       workouts = workoutList.map((workout) => {
         return (
-          <Link to={`/overview/${workout.id}`}>
+          <Link className="workout-dashboard__link" to={`/overview/${workout.id}`}>
             <WorkoutDashboardCard
               title={workout.title}
               description={workout.description}
@@ -45,7 +45,7 @@ class WorkoutDashboard extends Component {
           </Link>
         </header>
         <div className="workout__wrapper">
-          <h1 className="workout__title">Ben's workouts</h1>
+          <h1 className="workout__name">Ben's workouts</h1>
           <div className="workout__card--wrapper">{workouts}</div>
           <TrainingMaxes />
         </div>
