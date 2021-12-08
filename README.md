@@ -1,5 +1,5 @@
 # StriveFitness
-![logo](./client/assets/logos/logo-horizontal.svg)
+![logo](./client/src/assets/logos/logo-horizontal.svg)
 ## StriveFitness is a web application that allows users to track their workouts and progress online.
 
 ### run 'npm i' in both the client and server folders.
