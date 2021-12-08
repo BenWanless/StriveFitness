@@ -3,7 +3,6 @@ import "./TrainingMaxesCard.scss"
 
 class TrainingMaxesCard extends Component {
   render() {
-    console.log(this.props);
     return (
       <div className="exercise__container">
         <div className="wenis">

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 import Logo from "../../assets/logos/Vertical-Logo.svg";
 import BackArrow from "../../assets/icons/back-arrow.svg";
 import "./SignUpPage.scss";
@@ -44,7 +43,6 @@ class SignUp extends Component {
               <input className="form__input" type="text" />
             </label>
             <div className="form__button">
-              {/* <Button /> */}
               <Link to="/dashboard" className="signup-button">
                 <p className="signup-button__text">Sign up</p>
               </Link>

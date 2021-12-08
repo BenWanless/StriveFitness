@@ -21,13 +21,11 @@ class WorkoutOverview extends Component {
   }
 
   render() {
-    console.log(this.state.workoutDetails);
     let exerciseList = this.state.workoutDetails.exercises;
     let exercises = "";
 
     if (exerciseList != null) {
       exercises = exerciseList.map((exercise) => {
-        // console.log(exercise)
         return (
           <WorkoutOverviewCard
             name={exercise.name}
