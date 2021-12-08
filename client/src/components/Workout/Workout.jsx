@@ -75,8 +75,8 @@ class Workout extends Component {
           </div>
           {exercises}
           <div className="button__container">
-          <Link className="cancel__button"><p className="start-button__text">Cancel</p></Link>
-          <Link className="save__button"><p className="start-button__text">Save</p></Link>
+          <Link to='/dashboard' className="cancel__button"><p className="start-button__text">Cancel</p></Link>
+          <Link to='/dashboard' className="save__button"><p className="start-button__text">Save</p></Link>
           </div>
         </div>
       </div>
