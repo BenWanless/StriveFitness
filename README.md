@@ -1,10 +1,10 @@
 ![logo](./client/src/assets/logos/logo-horizontal.svg)
 
-## App Description
+**App Description**
 ---
 StriveFitness is a web application that allows users to track their workouts and progress online.
 
-## Instalation Instructions
+**Instalation Instructions**
 ---
 1. run `npm i` in both the client and server folders.
 2. run `npm start` in the client folder to start the front end.
