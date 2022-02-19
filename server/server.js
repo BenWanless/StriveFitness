@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const jwt = require('jsonwebtoken');
-const {PORT} = process.env || 8080;
+const PORT = 8080;
 
 const workoutRoutes = require("./routes/workouts.js");
 const trainingMaxesRoutes = require("./routes/trainingMaxes.js");
