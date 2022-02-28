@@ -1,26 +1,35 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Login from "./components/LoginPage";
-import SignUp from "./components/SignUpPage";
-import WorkoutDashboard from "./components/WorkoutDashboard";
-import WorkoutOverview from "./components/WorkoutOverview";
-import Workout from "./components/Workout/Workout";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import WorkoutDashboard from "./pages/WorkoutDashboard";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
+import WorkoutOverviewPage from "./pages/WorkoutOverviewPage";
+import WorkoutPage from "./pages/WorkoutPage";
+import RequireAuth from "./components/RequireAuth/RequireAuth";
+import UnauthorizedAccessPage from "./pages/UnauthorizedAccessPage";
 import "./App.scss";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="page__wrapper">
-          <Route exact path="/" component={Login} />
-          <Route path="/signup" component={SignUp} />
-          <Route path="/dashboard" component={WorkoutDashboard}/>
-          <Route path="/overview/:workoutId" exact component={WorkoutOverview}/>
-          <Route path="/workout/:workoutId" exact component={Workout}/>
-        </div>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <div className="page__wrapper">
+        <Route exact path="/" component={LoginPage} />
+        <Route path="/signup" component={SignUpPage} />
+        <Route path="/unauthorized" component={UnauthorizedAccessPage}/>
+        <RequireAuth
+          component={WorkoutDashboard}
+          path="/dashboard"
+        />
+        <RequireAuth
+          component={WorkoutOverviewPage}
+          path="/overview/:workoutId"
+        />
+        <RequireAuth
+          component={WorkoutPage}
+          path="/workout/:workoutId"
+        />
+      </div>
+    </Router>
+  );
 }
 
 export default App;

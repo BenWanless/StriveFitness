@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Logo from "../../assets/logos/logo-horizontal.svg";
-import WorkoutDashboardCard from "../WorkoutDashboardCard/WorkoutDashboardCard";
-import TrainingMaxes from "../TrainingMaxes/TrainingMaxes";
+import jwt_decode from "jwt-decode";
+import WorkoutDashboardCard from "../../components/WorkoutDashboardCard/WorkoutDashboardCard";
+import TrainingMaxes from "../../components/TrainingMaxes/TrainingMaxes";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import "./WorkoutDashboard.scss";
 
 class WorkoutDashboard extends Component {
@@ -21,11 +22,16 @@ class WorkoutDashboard extends Component {
   render() {
     let workoutList = this.state.workoutList;
     let workouts = "";
+    const token = sessionStorage.getItem("authorization").split(" ")[1];
+    const decodedUser = jwt_decode(token);
 
     if (workoutList != null) {
       workouts = workoutList.map((workout) => {
         return (
-          <Link className="workout-dashboard__link" to={`/overview/${workout.id}`}>
+          <Link
+            className="workout-dashboard__link"
+            to={`/overview/${workout.id}`}
+          >
             <WorkoutDashboardCard
               title={workout.title}
               description={workout.description}
@@ -37,16 +43,12 @@ class WorkoutDashboard extends Component {
     }
     return (
       <div className="dashboard__container">
-        <header className="dashboard__header">
-          <div></div>
-          <img src={Logo} alt="logo" />
-          <Link classname="dashboard__link" to="/">
-            Logout
-          </Link>
-        </header>
+        <PageHeader />
         <div className="workout__wrapper">
-          <h1 className="workout__name">Ben's workouts</h1>
-          <div className="workout__card--wrapper">{workouts}</div>
+          <h1 className="workout__name">
+            {`${decodedUser.firstName}'s`} workouts
+          </h1>
+          <div className="workout-card__wrapper">{workouts}</div>
           <TrainingMaxes />
         </div>
       </div>

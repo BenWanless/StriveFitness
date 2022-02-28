@@ -55,7 +55,7 @@ class TrainingMaxes extends Component {
         <div className="training-maxes__wrapper">
           <h2 className="training-maxes__title">Current training maxes</h2>
           <p
-            className="training-maxes__info training-maxes__info--underline"
+            className="training-maxes__info"
             onClick={this.showModal}
           >
             Edit

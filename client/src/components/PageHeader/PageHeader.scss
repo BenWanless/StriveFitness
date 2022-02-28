@@ -1,0 +1,38 @@
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__arrow{
+    color: pink;
+
+    &--active{
+      color: green;
+      display: none;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__text {
+    @include bodyTextSmall;
+    color: $white;
+    margin: 0;
+  }
+
+  &__logout {
+    position: absolute;
+    right: 2rem;
+  }
+}
