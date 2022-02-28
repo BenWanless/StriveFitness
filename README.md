@@ -52,7 +52,7 @@ Project is: _in Progress_
 
 Feel free to keep checking in for future updates!
 
-## Room for Improvement
+## Next Steps
 - Update styling for a cleaner experience
 - Switch all data over to the database
 - Add user swapable exercises
