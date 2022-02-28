@@ -16,7 +16,6 @@ This was completed as my capstone project for the BrainStation Web-Development b
 ### Front-End
 - React
 - SASS
-- Node.js
 - Axios
 - JWT-Decode
 
@@ -26,6 +25,7 @@ This was completed as my capstone project for the BrainStation Web-Development b
 - bcrypt
 - cors
 - Express
+- Node.js
 - JSONwebtoken
 - knex.js
 
