@@ -3,27 +3,35 @@
 @use "../../styles/partials/breakpoints.scss" as *;
 
 .overview {
-&__container{
-  padding: 1rem;
-}
+  &__container {
+    padding: 0 0.5rem 2rem;
+  }
 
   &__header {
+    width: 100%;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
 
-    &--right {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
+  &__header-right {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-    &--text {
-      @include bodyTextSmall;
-      color: $white;
-      margin: 0;
-    }
+  &__header-text {
+    @include bodyTextSmall;
+    color: $white;
+    margin: 0;
+  }
+
+  &__header-logout {
+    position: absolute;
+    right: 2rem;
   }
 
   &__top {
@@ -47,8 +55,8 @@
       margin: 0;
       @include bodyText;
       color: $graphite;
-      
-      &--small{
+
+      &--small {
         @include bodyTextSmall;
       }
     }
@@ -67,7 +75,7 @@
   }
 }
 
-.start-button{
+.start-button {
   color: $graphite;
   background-color: $lime;
   padding: 0.5rem 2rem;
@@ -75,19 +83,19 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 
-  &__text{
+  &__text {
     @include bodyText;
     font-weight: 700;
     color: $graphite;
     margin: 0;
   }
 
-  &:hover{
+  &:hover {
     background-color: #889823;
     text-decoration: none;
   }
 
-  &:active{
+  &:active {
     background-color: #889823;
     box-shadow: inset 0 4px rgba(0, 0, 0, 0.25);
   }

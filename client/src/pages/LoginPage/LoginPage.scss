@@ -6,48 +6,12 @@
   margin: 0;
 }
 
-.signup {
-  &__header {
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-
-    &--left,&--right{
-        width: 50%;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    &--left{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-    &--right{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-    }
-  }
-
+.login {
   &__container {
     display: flex;
     flex-direction: column;
-  }
-  &__title {
-    @include pageHeader;
-    padding-top: 2rem;
-    margin: 0;
-    color: white;
-    font-family: "Roboto-Bold";
-    text-align: center;
-  }
-
-  &__text {
-    @include bodyTextSmall;
-    color: $white;
-    margin: 0;
+    height: 100vh;
+    justify-content: center;
   }
 }
 
@@ -55,16 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 4.375rem;
-
-  &__wrapper {
-    margin: 0;
-    padding-top: 1rem;
-  }
+  margin: 0 auto;
+  width: 240px;
 
   &__input {
     background-color: $white;
+    width: 100%;
+    height: 40px;
     border: 2px solid $cloud;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -83,12 +44,6 @@
     padding-bottom: 0.5rem;
   }
 
-  &__button {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem 2rem 0rem 2rem;
-  }
-
   &__link {
     color: $white;
     padding-top: 0.5rem;
@@ -104,7 +59,7 @@
   margin: 0 auto;
 }
 
-.signup-button {
+.login-button {
   color: $graphite;
   background-color: $lime;
   padding: 1rem 3.938rem;
@@ -112,13 +67,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
 
-  &:hover{
-     background-color: #889823 ;
-     text-decoration: none;
+  &:hover {
+    background-color: #889823;
+    text-decoration: none;
   }
 
-  &:active{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
   }
 
