@@ -15,8 +15,20 @@ This was completed as my capstone project for the BrainStation Web-Development b
 ## Technologies Used
 ### Front-End
 - React
-- Material UI
+- SASS
+- Node.js
 - Axios
+- JWT-Decode
+
+### Back-End
+- REST API
+- MySQL
+- bcrypt
+- cors
+- Express
+- JSONwebtoken
+- knex.js
+
 
 ## Features
 - Makes it easy to access and follow along with your workout program
