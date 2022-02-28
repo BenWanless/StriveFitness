@@ -4,10 +4,6 @@ const router = express.Router();
 const fs = require("fs");
 const constants = require("../constants.js");
 
-// const workouts = JSON.parse(
-//   fs.readFileSync(constants.workoutsJsonPath, "utf-8")
-// );
-
 const workouts = require('../data/workouts.json');
 
 router.get('/',(req, res) => {

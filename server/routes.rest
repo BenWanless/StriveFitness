@@ -1,0 +1,39 @@
+Get http://localhost:9090/users
+
+###
+post http://localhost:9090/register
+Content-Type: application/json
+
+{
+    "firstName": "Davis",
+    "lastName": "Wanless",
+    "email": "dwanless@hotmail.ca",
+    "userName": "d-money",
+    "password": "12345"
+}
+
+
+###
+
+Get http://localhost:9090/users/621400c6110ed980abf77680
+
+###
+
+PATCH http://localhost:9090/users/621400c6110ed980abf77680
+Content-Type: application/json
+
+{
+    "firstName": "Davis",
+    "userName": "d-dog",
+    "email": "Titman@hotmail.ca"
+}
+
+###
+
+post http://localhost:9090/login
+Content-Type: application/json
+
+{
+    "userName": "d-money",
+    "password": "12345"
+}
