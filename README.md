@@ -13,6 +13,7 @@ This was completed as my capstone project for the BrainStation Web-Development b
 * [Contact](#contact)
 
 ## Technologies Used
+###Front-End
 - React
 - Material UI
 - Axios
